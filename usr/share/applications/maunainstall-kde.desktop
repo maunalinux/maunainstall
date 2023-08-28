@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Software Manager
+Name[pt]=Gestor de programas
+Name[pt_BR]=Gerenciador de Aplicativos
+Comment=Install new applications
+Comment[pt]=Instalar novas aplicações
+Comment[pt_BR]=Instalar novos aplicativos
+GenericName=Install new applications
+GenericName[pt]=Instalar novas aplicações
+GenericName[pt_BR]=Instalar novos aplicativos
+Exec=maunainstall
+Icon=maunainstall
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=System;
+OnlyShowIn=KDE;

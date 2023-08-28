@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+
+import subprocess
+import sys
+
+subprocess.call(["/usr/lib/mauna/maunainstall/maunainstall.py", "install"] + sys.argv[1:])

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo rm -rf /usr/lib/mauna/maunainstall
+sudo cp -R usr /
+maunainstall
