@@ -1,8 +1,20 @@
 [Desktop Entry]
 Name=Software Manager
+Name[af]=Sagteware Bestuurder
+Name[ar]=مدير البرمجيات
+Name[de]=Software-Manager
+Name[es]=Gerente de Software
+Name[fr]=Gestionnaire de Logiciels
+Name[fr_CA]=Gestionnaire de logiciels
 Name[pt]=Gestor de programas
 Name[pt_BR]=Gerenciador de Aplicativos
 Comment=Install new applications
+Comment[af]=Installeer nuwe toepassings
+Comment[ar]=تثبيت تطبيقات جديدة
+Comment[de]=Neue Anwendungen installieren
+Comment[es]=Instalar nuevas aplicaciones
+Comment[fr]=Installer de nouvelles applications
+Comment[fr_CA]=Installer de nouvelles applications
 Comment[pt]=Instalar novas aplicações
 Comment[pt_BR]=Instalar novos aplicativos
 GenericName=Install new applications
