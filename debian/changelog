@@ -1,3 +1,10 @@
+maunainstall (8.3.1) mauna; urgency=medium
+
+  * New upstream release
+  * l10n: New translations available
+
+ -- Mauna Linux <dev@maunalinux.top>  Wed, 18 Oct 2023 19:04:29 -0300
+
 maunainstall (8.3.0) mauna; urgency=medium
 
   * New upstream release for Mauna Linux
