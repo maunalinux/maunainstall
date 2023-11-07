@@ -68,7 +68,7 @@ PACKAGE_TYPE_COMBO_SUMMARY = 2
 PACKAGE_TYPE_COMBO_ICON_NAME = 3
 PACKAGE_TYPE_COMBO_PKGINFO = 4
 
-# Don't let mintinstall run as root
+# Don't let maunainstall run as root
 if os.getuid() == 0:
     print("The software manager should not be run as root. Please run it in user mode.")
     sys.exit(1)
@@ -96,7 +96,6 @@ ALIASES['minecraft-launcher'] = "Minecraft"
 ALIASES['virtualbox-qt'] = "Virtualbox " # Added a space to force alias
 ALIASES['virtualbox'] = "Virtualbox (base)"
 ALIASES['sublime-text'] = "Sublime"
-ALIASES['firefox'] = "Firefox"
 ALIASES['mauna-about'] = "About Mauna"
 ALIASES['mauna-image-writer'] = "Mauna Image Writer"
 ALIASES['mauna-mycomputer'] = "Mauna My Computer"
@@ -105,6 +104,7 @@ ALIASES['mauna-usb-formatter'] = "Mauna USB Formatter"
 ALIASES['shortwave'] = "Shortwave"
 ALIASES['system-monitoring-center'] = "System Monitoring Center"
 ALIASES['tuner'] = "Tuner"
+ALIASES['firefox'] = "Firefox"
 ALIASES['vlc'] = "VLC"
 ALIASES['mpv'] = "Mpv"
 ALIASES['gimp'] = "Gimp"
@@ -2789,7 +2789,7 @@ class Application(Gtk.Application):
                 row_pkginfo = match
 
         if row_pkginfo:
-            row = [i, _("System Package"), _("Your system's package manager"), "linuxmint-logo-badge-symbolic", row_pkginfo]
+            row = [i, _("System Package"), _("Your system's package manager"), "mauna-logo-badge-symbolic", row_pkginfo]
             iter = self.package_type_store.append(row)
             if pkginfo == row_pkginfo:
                 to_use_iter = iter
@@ -3041,7 +3041,7 @@ class Application(Gtk.Application):
                 if pkginfo.pkg_hash.startswith("f"):
                     action_button_icon = "maunainstall-package-flatpak-symbolic"
                 else:
-                    action_button_icon = "linuxmint-logo-badge-symbolic"
+                    action_button_icon = "mauna-logo-badge-symbolic"
 
                 style_context.remove_class("destructive-action")
                 style_context.add_class("suggested-action")
