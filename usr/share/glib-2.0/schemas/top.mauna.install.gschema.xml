@@ -39,6 +39,11 @@
       <default>"all"</default>
       <summary></summary>
       <description></description>
-    </key>    
+    </key>   
+    <key type="b" name="search-verified-only">
+      <default>false</default>
+      <summary>Only include verified flatpaks in search results.</summary>
+      <description></description>
+    </key>     
   </schema>
 </schemalist>

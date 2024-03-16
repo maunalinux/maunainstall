@@ -144,6 +144,18 @@
                     <property name="position">1</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkImage" id="verified_mark">
+                    <property name="can-focus">False</property>
+                    <property name="no-show-all">True</property>
+                    <property name="icon-name">mintinstall-verified-symbolic</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>                
               </object>
               <packing>
                 <property name="expand">False</property>
