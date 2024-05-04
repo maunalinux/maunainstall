@@ -1440,7 +1440,7 @@ class Application(Gtk.Application):
 
     def print_startup_time(self):
         end_time = time.time()
-        print('Mintinstall startup took %0.3f ms' % ((end_time - self.start_time) * 1000.0,))
+        print('Maunainstall startup took %0.3f ms' % ((end_time - self.start_time) * 1000.0,))
 
     @print_timing
     def load_banner(self):
@@ -2295,7 +2295,7 @@ class Application(Gtk.Application):
         self.root_categories[category.name] = category
 
         # ALL
-        self.all_category = Category(_("All Applications"), None, self.categories, "mintinstall-all-symbolic")
+        self.all_category = Category(_("All Applications"), None, self.categories, "maunainstall-all-symbolic")
         for cat in self.categories:
             self.all_category.matchingPackages.extend(cat.matchingPackages)
         sorted(self.all_category.matchingPackages)
