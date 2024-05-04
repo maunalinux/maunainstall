@@ -239,13 +239,13 @@ class AsyncImage(Gtk.Image):
             self.path = icon_string
             file = Gio.File.new_for_uri(self.path)
         elif theme.has_icon(icon_string):
-                info = theme.lookup_icon_for_scale(icon_string,
-                                                   self.height,
-                                                   self.get_scale_factor(),
-                                                   Gtk.IconLookupFlags.FORCE_SIZE)
-                if info:
-                    self.path = info.get_filename()
-                    file = Gio.File.new_for_path(self.path)
+            self.width = width
+            self.height = height
+            self.set_size_request(width, height)
+            self.set_from_icon_name(icon_string, Gtk.IconSize.DIALOG)
+            self.set_pixel_size(self.height)
+            self.emit("image-loaded")
+            return
 
         if file:
             self.cancellable = Gio.Cancellable()
@@ -2163,14 +2163,6 @@ class Application(Gtk.Application):
 
         self.flatpak_category = Category("Flatpak", None, self.categories, "maunainstall-package-flatpak-symbolic")
 
-        # ALL
-        self.all_category = Category(_("All Applications"), None, self.categories, "maunainstall-all-symbolic")
-        with os.scandir("/usr/share/mauna/maunainstall/categories/") as it:
-            for entry in it:
-                if entry.path.endswith(".list"):
-                    self.all_category.matchingPackages.extend(self.file_to_array(entry.path))
-                    sorted(self.all_category.matchingPackages)
-
         # INTERNET
         category = Category(_("Internet"), None, self.categories, "maunainstall-web-symbolic")
 
@@ -2289,6 +2281,12 @@ class Application(Gtk.Application):
         subcat.matchingPackages = self.file_to_array("/usr/share/mauna/maunainstall/categories/development-essentials.list")
         self.root_categories[category.name] = category
 
+        # ALL
+        self.all_category = Category(_("All Applications"), None, self.categories, "mintinstall-all-symbolic")
+        for cat in self.categories:
+            self.all_category.matchingPackages.extend(cat.matchingPackages)
+        sorted(self.all_category.matchingPackages)
+
     def add_pkginfo_to_category(self, pkginfo, category):
             try:
                 if category not in pkginfo.categories:
@@ -2304,7 +2302,8 @@ class Application(Gtk.Application):
         self.finish_loading_visual()
 
         self.gui_ready = True
-
+        self.update_conditional_widgets()
+        
         if self.install_on_startup_file is not None:
             self.handle_command_line_install(self.install_on_startup_file)
 
@@ -2324,12 +2323,16 @@ class Application(Gtk.Application):
         # Process matching packages
         for category in self.categories:
             for package_name in category.matchingPackages:
-                pkginfo = self.installer.find_pkginfo(package_name, "a")
+                if package_name.startswith("fp"):
+                    continue
+                pkginfo = self.installer.find_pkginfo(package_name, installer.PKG_TYPE_APT)
 
                 self.add_pkginfo_to_category(pkginfo, category)
 
         for package_name in self.installed_category.matchingPackages:
-            pkginfo = self.installer.find_pkginfo(package_name, "f")
+            if not package_name.startswith("fp"):
+                continue
+            pkginfo = self.installer.find_pkginfo(package_name, installer.PKG_TYPE_FLATPAK)
             self.add_pkginfo_to_category(pkginfo,
                                          self.installed_category)
 
@@ -2370,7 +2373,7 @@ class Application(Gtk.Application):
 
     def apply_aliases(self):
         for pkg_name in ALIASES.keys():
-            pkginfo = self.installer.cache.find_pkginfo(pkg_name, 'a') # aliases currently only apply to apt
+            pkginfo = self.installer.cache.find_pkginfo(pkg_name, installer.PKG_TYPE_APT) # aliases currently only apply to apt
 
             if pkginfo:
                 # print("Applying aliases: ", ALIASES[pkg_name], self.installer.get_display_name(pkginfo))
@@ -2868,7 +2871,7 @@ class Application(Gtk.Application):
         if pkginfo.pkg_hash.startswith("f") or self.get_flatpak_for_deb(pkginfo) is not None:
             a_flatpak = self.get_flatpak_for_deb(pkginfo) or pkginfo
             for remote in self.installer.list_flatpak_remotes():
-                row_pkginfo = self.installer.find_pkginfo(a_flatpak.name, remote=remote.name)
+                row_pkginfo = self.installer.find_pkginfo(a_flatpak.name, installer.PKG_TYPE_FLATPAK, remote=remote.name)
                 if row_pkginfo:
                     row = [i, _("Flatpak (%s)") % remote.title, remote.summary, "maunainstall-package-flatpak-symbolic", row_pkginfo]
                     iter = self.package_type_store.append(row)
