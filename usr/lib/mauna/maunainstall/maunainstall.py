@@ -1004,6 +1004,7 @@ class Application(Gtk.Application):
         if self.installer.init_sync():
             GLib.idle_add(self.on_installer_ready)
         else:
+            self.loading_label.set_label(_("Generating cache, one moment"))        
             self.installer.init(self.on_installer_ready)        
 
     def do_command_line(self, command_line, data=None):
@@ -1058,6 +1059,7 @@ class Application(Gtk.Application):
 
     def start_add_new_flatpak_remote(self, file):
         self.builder.get_object("loading_spinner").start()
+        self.loading_label.set_label(_("Generating cache, one moment"))        
         self.page_stack.set_visible_child_name(self.PAGE_LOADING)
         self.installer.add_remote_from_repo_file(file, self.add_new_flatpak_remote_finished)
 
@@ -1163,6 +1165,7 @@ class Application(Gtk.Application):
                     FALLBACK_PACKAGE_ICON_PATH = iconInfo.get_filename()
                     break
 
+        self.loading_label = self.builder.get_object("loading_label")
         self.detail_view_icon = AsyncImage()
         self.detail_view_icon.show()
         self.builder.get_object("application_icon_holder").add(self.detail_view_icon)
@@ -1389,6 +1392,7 @@ class Application(Gtk.Application):
         self.refresh_cache_menuitem.set_sensitive(False)
 
         self.page_stack.set_visible_child_name(self.PAGE_LOADING)
+        self.loading_label.set_label(_("Generating cache, one moment"))        
 
         self.installer.force_new_cache(self._on_refresh_cache_complete)
 
@@ -1406,6 +1410,7 @@ class Application(Gtk.Application):
             self.banner_tile.repopulate_tile()        
 
     def on_installer_ready(self):
+        self.loading_label.set_label(_("Loading, please wait"))    
         try:
             self.process_matching_packages()
 
