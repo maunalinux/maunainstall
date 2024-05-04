@@ -793,7 +793,7 @@ class PackageTile(Gtk.FlowBoxChild):
 
                 self.package_type_emblem.set_from_icon_name("maunainstall-package-flatpak-symbolic", Gtk.IconSize.MENU)
                 self.package_type_box.show()
-            self.package_type_box.set_tooltip_text(_("This package is a Flatpak"))              
+                self.package_type_box.set_tooltip_text(_("This package is a Flatpak"))
             else:
                 self.package_type_name.hide()
                 self.package_type_emblem.hide()
