@@ -1459,6 +1459,9 @@ class Application(Gtk.Application):
             else:
                 pkginfo = self.installer.find_pkginfo(name, installer.PKG_TYPE_APT)
                 is_flatpak = False
+                
+            if pkginfo is None:
+                continue                
 
             selected_apps.add(name)
             num_selected += 1
