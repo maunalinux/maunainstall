@@ -1,3 +1,12 @@
+maunainstall (8.3.3) mauna; urgency=medium
+
+  * New upstream release
+  [ Michael Webster ]
+  * debian/control: Add lxml dependency (needed by bs4).
+  * Use only large images for the debian.net screenshot harvester.
+
+ -- Mauna Linux <dev@maunalinux.top>  Sat, 22 Jun 2024 16:24:21 -0300
+
 maunainstall (8.3.2) mauna; urgency=medium
 
   [ Michael Webster ]
