@@ -2129,8 +2129,9 @@ class Application(Gtk.Application):
 
         from maunacommon.installer import cache
 
-        self.installer.cache = cache.PkgCache(self.installer.have_flatpak)
-        self.installer.force_new_cache()
+        self.installer.cache = cache.PkgCache(None, None, self.installer.have_flatpak)
+        self.installer.cache._generate_cache_thread()
+
         self.installer.backend_table = {}
 
         self.installer.initialize_appstream()
