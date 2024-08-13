@@ -1,3 +1,43 @@
+maunainstall (8.3.5) mauna; urgency=medium
+
+  * New upstream release
+
+  [ Michael Webster ]
+  * Guard against flatpak support in some recent changes.
+  * Add a couple more possibilities for .desktop file names when showing the 'launch' button.
+  * Fix command-line execution for listing packages. 
+
+ -- Mauna Linux <dev@maunalinux.top>  Fri, 09 Aug 2024 19:51:33 -0300
+
+maunainstall (8.3.4) mauna; urgency=medium
+
+  * New upstream release
+
+  [ Michael Webster ]
+  * Update apt-flatpak match info.
+  * Fix makepot script.
+  * maunainstall-remove-app.py: Fix a potential error if attempting to remove a not-installed app.
+
+  [ Clement Lefebvre ]
+  * l10n: Update POT
+
+  [ Michael Webster ]
+  * prefs.py: Fix typo.
+
+  [ Clement Lefebvre ]
+  * l10n: Update POT
+
+  [ Michael Webster ]
+  * Improve search for screenshots on debian.net.
+  * Don't try to start the banner slideshow in low resolution mode.
+  * Don't try to fix description formatting.
+  * debian/control: Add missing dependencies.
+
+  [ Clement Lefebvre ]
+  * Update favorites
+
+ -- Mauna Linux <dev@maunalinux.top>  Fri, 26 Jul 2024 18:00:56 -0300
+
 maunainstall (8.3.3) mauna; urgency=medium
 
   * New upstream release
