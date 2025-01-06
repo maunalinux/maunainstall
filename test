@@ -3,4 +3,8 @@
 sudo rm -rf /usr/lib/mauna/maunainstall
 sudo cp -R usr /
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
-maunainstall
+mkdir -p debian/maunainstall/usr/share/mauna/maunainstall
+cd resources && sudo glib-compile-resources \
+    --target=/usr/share/mauna/maunainstall/maunainstall.gresource maunainstall.gresource.xml \
+    && cd ..
+DEBUG=1 maunainstall

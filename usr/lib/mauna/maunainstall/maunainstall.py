@@ -125,6 +125,10 @@ with open(os.path.join(libdir, "apt_flatpak_match_data.info")) as f:
 FLATPAK_EQUIVS = match_data["apt_flatpak_matches"]
 DEB_EQUIVS = dict((v, k) for k,v in FLATPAK_EQUIVS.items())
 
+pkg_tile_ui = "/usr/share/mauna/maunainstall/maunainstall.gresource"
+UI_RESOURCES = Gio.Resource.load(pkg_tile_ui)
+UI_RESOURCES._register()
+
 KB = 1000
 MB = KB * 1000
 
@@ -731,9 +735,7 @@ class PackageTile(Gtk.FlowBoxChild):
                 self.pkg_category = pkginfo.categories[1]
 
 
-        glade_file = "/usr/share/mauna/maunainstall/package-tile.glade"
-        self.builder = Gtk.Builder()
-        self.builder.add_from_file(glade_file)
+        self.builder = Gtk.Builder.new_from_resource("/com/mauna/maunainstall/package-tile.glade")
 
         self.overlay = self.builder.get_object("vertical_package_tile")
         self.button.add(self.overlay)
@@ -1139,9 +1141,7 @@ class Application(Gtk.Application):
         # Build the GUI
         glade_file = "/usr/share/mauna/maunainstall/maunainstall.glade"
 
-        self.builder = Gtk.Builder()
-        self.builder.set_translation_domain(APP)
-        self.builder.add_from_file(glade_file)
+        self.builder = Gtk.Builder.new_from_resource("/com/mauna/maunainstall/maunainstall.glade")
 
         self.main_window = self.builder.get_object("main_window")
         self.main_window.set_title(_("Software Manager"))

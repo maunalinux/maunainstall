@@ -5,6 +5,14 @@ DEB_VERSION := $(shell dpkg-parsechangelog | egrep '^Version:' | cut -f 2 -d ' '
 %:
 	dh ${@}
 
+override_dh_auto_install:
+	mkdir -p debian/maunainstall/usr/share/mauna/maunainstall
+	cd resources &&	glib-compile-resources \
+		--target=../debian/maunainstall/usr/share/mauna/maunainstall/maunainstall.gresource maunainstall.gresource.xml \
+		&& cd ..
+	cp resources/*.glade debian/maunainstall/usr/share/mauna/maunainstall
+	dh_auto_install
+
 # Inject version number in the code
 override_dh_installdeb:
 	dh_installdeb
