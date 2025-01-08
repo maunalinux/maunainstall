@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-06 19:02-0300\n"
+"POT-Creation-Date: 2025-01-07 21:36-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,407 +18,410 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:100
-#: usr/lib/mauna/maunainstall/maunainstall.py:102
+#: usr/lib/mauna/maunainstall/maunainstall.py:84
+#: usr/lib/mauna/maunainstall/maunainstall.py:86
 msgid "Multimedia Codecs"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:101
+#: usr/lib/mauna/maunainstall/maunainstall.py:85
 msgid "Multimedia Codecs for KDE"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:511
+#: usr/lib/mauna/maunainstall/maunainstall.py:220
 msgid "Add"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:517
-#: usr/lib/mauna/maunainstall/maunainstall.py:3194
+#: usr/lib/mauna/maunainstall/maunainstall.py:226
+#: usr/lib/mauna/maunainstall/maunainstall.py:2918
 msgid "Remove"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:536
+#: usr/lib/mauna/maunainstall/maunainstall.py:245
 msgid "Unavailable"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:781
+#: usr/lib/mauna/maunainstall/maunainstall.py:488
 msgid "This package is a Flatpak"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:885
+#: usr/lib/mauna/maunainstall/maunainstall.py:592
 msgid "All"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1047
+#: usr/lib/mauna/maunainstall/maunainstall.py:754
 msgid ""
 "Cannot process this file while there are active operations.\n"
 "Please try again after they finish."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1067
+#: usr/lib/mauna/maunainstall/maunainstall.py:774
 msgid "The Flatpak repo you are trying to add already exists."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1075
+#: usr/lib/mauna/maunainstall/maunainstall.py:782
 msgid "An error occurred attempting to add the Flatpak repo."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1083
+#: usr/lib/mauna/maunainstall/maunainstall.py:790
 msgid "Flatpak support is not currently available. Try installing flatpak."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1102
+#: usr/lib/mauna/maunainstall/maunainstall.py:809
 msgid ""
 "Flatpak support is not currently available. Try installing flatpak and "
 "gir1.2-flatpak-1.0."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1142
-#: usr/lib/mauna/maunainstall/maunainstall.py:1143
-#: usr/lib/mauna/maunainstall/maunainstall.py:2083 generate_desktop_files:25
+#: usr/lib/mauna/maunainstall/maunainstall.py:847
+#: usr/lib/mauna/maunainstall/maunainstall.py:848
+#: usr/lib/mauna/maunainstall/maunainstall.py:1798 generate_desktop_files:25
 #: generate_desktop_files:36
 msgid "Software Manager"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1194
+#: usr/lib/mauna/maunainstall/maunainstall.py:887
 msgid "Show installed applications"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1203
+#: usr/lib/mauna/maunainstall/maunainstall.py:896
 msgid "Refresh the list of packages"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1209
+#: usr/lib/mauna/maunainstall/maunainstall.py:902
+msgid "Software sources"
+msgstr ""
+
+#: usr/lib/mauna/maunainstall/maunainstall.py:907
 msgid "Preferences"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1219
-#: usr/lib/mauna/maunainstall/maunainstall.py:2081
+#: usr/lib/mauna/maunainstall/maunainstall.py:917
+#: usr/lib/mauna/maunainstall/maunainstall.py:1796
 msgid "About"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1559
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:8
+#: usr/lib/mauna/maunainstall/maunainstall.py:1263
+#: resources/maunainstall.glade.h:8
 msgid "Top Rated"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1607
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:6
+#: usr/lib/mauna/maunainstall/maunainstall.py:1311
+#: resources/maunainstall.glade.h:6
 msgid "Featured"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1668
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:7
+#: usr/lib/mauna/maunainstall/maunainstall.py:1372
+#: resources/maunainstall.glade.h:7
 msgid "Categories"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1733
+#: usr/lib/mauna/maunainstall/maunainstall.py:1449
 #, python-format
 msgid "%d task running"
 msgid_plural "%d tasks running"
 msgstr[0] ""
 msgstr[1] ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:1876
+#: usr/lib/mauna/maunainstall/maunainstall.py:1591
 msgid "No screenshots available"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2171
+#: usr/lib/mauna/maunainstall/maunainstall.py:1887
 msgid ""
 "There are currently active operations.\n"
 "Are you sure you want to quit?"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2229
+#: usr/lib/mauna/maunainstall/maunainstall.py:1945
 msgid "Installed Applications"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2232
+#: usr/lib/mauna/maunainstall/maunainstall.py:1948
 msgid "Currently working on the following packages"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2237
+#: usr/lib/mauna/maunainstall/maunainstall.py:1953
 msgid "Internet"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2239
+#: usr/lib/mauna/maunainstall/maunainstall.py:1955
 msgid "Web"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2244
+#: usr/lib/mauna/maunainstall/maunainstall.py:1960
 msgid "Email"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2248
+#: usr/lib/mauna/maunainstall/maunainstall.py:1964
 msgid "Chat"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2251
+#: usr/lib/mauna/maunainstall/maunainstall.py:1967
 msgid "File sharing"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2257
+#: usr/lib/mauna/maunainstall/maunainstall.py:1973
 msgid "Sound and video"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2259
+#: usr/lib/mauna/maunainstall/maunainstall.py:1975
 msgid "Sound"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2261
+#: usr/lib/mauna/maunainstall/maunainstall.py:1977
 msgid "Video"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2266
+#: usr/lib/mauna/maunainstall/maunainstall.py:1982
 msgid "Graphics"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2270
+#: usr/lib/mauna/maunainstall/maunainstall.py:1986
 msgid "3D"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2272
+#: usr/lib/mauna/maunainstall/maunainstall.py:1988
 msgid "Drawing"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2274
+#: usr/lib/mauna/maunainstall/maunainstall.py:1990
 msgid "Photography"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2276
+#: usr/lib/mauna/maunainstall/maunainstall.py:1992
 msgid "Publishing"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2278
+#: usr/lib/mauna/maunainstall/maunainstall.py:1994
 msgid "Scanning"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2280
+#: usr/lib/mauna/maunainstall/maunainstall.py:1996
 msgid "Viewers"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2285
+#: usr/lib/mauna/maunainstall/maunainstall.py:2001
 msgid "Office"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2291
+#: usr/lib/mauna/maunainstall/maunainstall.py:2007
 msgid "Games"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2295
+#: usr/lib/mauna/maunainstall/maunainstall.py:2011
 msgid "Board games"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2297
+#: usr/lib/mauna/maunainstall/maunainstall.py:2013
 msgid "First-person"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2299
+#: usr/lib/mauna/maunainstall/maunainstall.py:2015
 msgid "Real-time strategy"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2301
+#: usr/lib/mauna/maunainstall/maunainstall.py:2017
 msgid "Turn-based strategy"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2303
+#: usr/lib/mauna/maunainstall/maunainstall.py:2019
 msgid "Emulators"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2305
+#: usr/lib/mauna/maunainstall/maunainstall.py:2021
 msgid "Simulation and racing"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2310
+#: usr/lib/mauna/maunainstall/maunainstall.py:2026
 msgid "Accessories"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2316
+#: usr/lib/mauna/maunainstall/maunainstall.py:2032
 msgid "System tools"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2323
+#: usr/lib/mauna/maunainstall/maunainstall.py:2039
 msgid "Fonts"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2329
+#: usr/lib/mauna/maunainstall/maunainstall.py:2045
 msgid "Science and Education"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2330
+#: usr/lib/mauna/maunainstall/maunainstall.py:2046
 msgid "Science"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2332
+#: usr/lib/mauna/maunainstall/maunainstall.py:2048
 msgid "Maths"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2334
+#: usr/lib/mauna/maunainstall/maunainstall.py:2050
 msgid "Education"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2336
+#: usr/lib/mauna/maunainstall/maunainstall.py:2052
 msgid "Electronics"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2342
+#: usr/lib/mauna/maunainstall/maunainstall.py:2058
 msgid "Programming"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2344
+#: usr/lib/mauna/maunainstall/maunainstall.py:2060
 msgid "Java"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2345
+#: usr/lib/mauna/maunainstall/maunainstall.py:2062
 msgid "PHP"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2348
+#: usr/lib/mauna/maunainstall/maunainstall.py:2064
 msgid "Python"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2350
+#: usr/lib/mauna/maunainstall/maunainstall.py:2066
 msgid "Essentials"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2355
+#: usr/lib/mauna/maunainstall/maunainstall.py:2071
 msgid "All Applications"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2791
+#: usr/lib/mauna/maunainstall/maunainstall.py:2516
 msgid "All operations complete"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2795
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:9
+#: usr/lib/mauna/maunainstall/maunainstall.py:2520
+#: resources/maunainstall.glade.h:9
 msgid "No matching packages found"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2798
+#: usr/lib/mauna/maunainstall/maunainstall.py:2523
 msgid ""
 "No packages to show.\n"
 "This may indicate a problem - try refreshing the cache."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2931
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:14
+#: usr/lib/mauna/maunainstall/maunainstall.py:2656
+#: resources/maunainstall.glade.h:14
 msgid "System Package"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2931
+#: usr/lib/mauna/maunainstall/maunainstall.py:2656
 msgid "Your system's package manager"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2943
+#: usr/lib/mauna/maunainstall/maunainstall.py:2668
 #, python-format
 msgid "Flatpak (%s)"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2970
-msgid "Unknown maintainer"
-msgstr ""
-
-#: usr/lib/mauna/maunainstall/maunainstall.py:2974
+#: usr/lib/mauna/maunainstall/maunainstall.py:2697
 #, python-format
 msgid "by %s"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:2998
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:20
+#: usr/lib/mauna/maunainstall/maunainstall.py:2699
+msgid "Unknown maintainer"
+msgstr ""
+
+#: usr/lib/mauna/maunainstall/maunainstall.py:2723
+#: resources/maunainstall.glade.h:20
 msgid "Homepage"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3007
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:21
+#: usr/lib/mauna/maunainstall/maunainstall.py:2732
+#: resources/maunainstall.glade.h:21
 msgid "Documentation"
 msgstr ""
 
 #. TRANSLATORS: showing specific number of reviews in the list view and the header of the package details.
-#: usr/lib/mauna/maunainstall/maunainstall.py:3047
+#: usr/lib/mauna/maunainstall/maunainstall.py:2771
 #, python-format
 msgid "%d Review"
 msgid_plural "%d Reviews"
 msgstr[0] ""
 msgstr[1] ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3110
+#: usr/lib/mauna/maunainstall/maunainstall.py:2834
 #, python-format
 msgid "Click <a href='%s'>here</a> to add your own review."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3165
+#: usr/lib/mauna/maunainstall/maunainstall.py:2889
 msgid ""
 "Unable to communicate with servers. Check your Internet connection and try "
 "again."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3198
+#: usr/lib/mauna/maunainstall/maunainstall.py:2922
 msgid "Installed"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3200
-#: usr/lib/mauna/maunainstall/maunainstall-remove-app.py:64
+#: usr/lib/mauna/maunainstall/maunainstall.py:2924
 msgid "Removing"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3202
+#: usr/lib/mauna/maunainstall/maunainstall.py:2926
 msgid "Install"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3210
+#: usr/lib/mauna/maunainstall/maunainstall.py:2934
 msgid "Not installed"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3212
+#: usr/lib/mauna/maunainstall/maunainstall.py:2936
 msgid "Installing"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3216
+#: usr/lib/mauna/maunainstall/maunainstall.py:2940
 msgid "Cannot remove"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3217
+#: usr/lib/mauna/maunainstall/maunainstall.py:2941
 msgid "Removing this package could cause irreparable damage to your system."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3219
+#: usr/lib/mauna/maunainstall/maunainstall.py:2943
 msgid "Cannot install"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3220
+#: usr/lib/mauna/maunainstall/maunainstall.py:2944
 msgid "Installing this package could cause irreparable damage to your system."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3228
+#: usr/lib/mauna/maunainstall/maunainstall.py:2952
 msgid "Not available"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3232
+#: usr/lib/mauna/maunainstall/maunainstall.py:2956
 msgid "Please use apt-get to install this package."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3234
+#: usr/lib/mauna/maunainstall/maunainstall.py:2958
 msgid "Use apt-get to remove this package."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3238
+#: usr/lib/mauna/maunainstall/maunainstall.py:2962
 msgid "Try again"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3241
+#: usr/lib/mauna/maunainstall/maunainstall.py:2965
 msgid "Something went wrong. Click to try again."
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3267
+#: usr/lib/mauna/maunainstall/maunainstall.py:2991
 #, python-format
 msgid "%(localSize)s of disk space required"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3271
+#: usr/lib/mauna/maunainstall/maunainstall.py:2995
 #, python-format
 msgid "%(downloadSize)s to download, %(localSize)s of disk space freed"
 msgstr ""
 
-#: usr/lib/mauna/maunainstall/maunainstall.py:3274
+#: usr/lib/mauna/maunainstall/maunainstall.py:2998
 #, python-format
 msgid "%(downloadSize)s to download, %(localSize)s of disk space required"
 msgstr ""
@@ -463,82 +466,82 @@ msgstr ""
 msgid "Install new applications"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:1
+#: resources/maunainstall.glade.h:1
 msgid "Unverified Flatpaks represent a huge security risk"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:2
+#: resources/maunainstall.glade.h:2
 msgid ""
 "They are not officially approved by the developer of the application and "
 "could be maintained by anyone."
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:3
+#: resources/maunainstall.glade.h:3
 msgid ""
 "To avoid any potential malware, Mauna Linux strongly recommends against "
 "unverified Flatpaks."
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:4
+#: resources/maunainstall.glade.h:4
 msgid "Loading, please wait"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:5
+#: resources/maunainstall.glade.h:5
 msgid "Generating cache, one moment"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:10
+#: resources/maunainstall.glade.h:10
 msgid "Refresh"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:11
+#: resources/maunainstall.glade.h:11
 msgid "Unverified Flatpak"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:12
+#: resources/maunainstall.glade.h:12
 msgid "Launch"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:13
+#: resources/maunainstall.glade.h:13
 msgid "Please be patient. This can take some time..."
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:15
+#: resources/maunainstall.glade.h:15
 msgid "Name:"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:16
+#: resources/maunainstall.glade.h:16
 msgid "Version:"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:17
+#: resources/maunainstall.glade.h:17
 msgid "Size:"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:18
+#: resources/maunainstall.glade.h:18
 msgid "Branch:"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:19
+#: resources/maunainstall.glade.h:19
 msgid "Remote:"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:22
+#: resources/maunainstall.glade.h:22
 msgid "Details"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:23
+#: resources/maunainstall.glade.h:23
 msgid "Reviews"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:24
+#: resources/maunainstall.glade.h:24
 msgid "Optional components"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:25
+#: resources/maunainstall.glade.h:25
 msgid "Searching software repositories, one moment"
 msgstr ""
 
-#: usr/share/mauna/maunainstall/maunainstall.glade.h:26
+#: resources/maunainstall.glade.h:26
 msgid "Limit search to current listing"
 msgstr ""
