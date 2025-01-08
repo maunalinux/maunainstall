@@ -204,7 +204,7 @@ class ScreenshotDownloader():
     def __init__(self, application, pkginfo, scale):
         self.application = application
         self.pkginfo = pkginfo
-        self.settings = Gio.Settings(schema_id="com.mauna.install")
+        self.settings = Gio.Settings(schema_id="top.mauna.install")
         self.scale_factor = scale
         threadpool.submit(self._download_screenshots_thread)
 

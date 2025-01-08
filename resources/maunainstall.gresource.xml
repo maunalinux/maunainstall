@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/com/mauna/maunainstall">
+  <gresource prefix="/top/mauna/maunainstall">
     <file>maunainstall.glade</file>
     <file>package-tile.glade</file>
   </gresource>

@@ -88,7 +88,6 @@ ALIASES['mauna-update'] = "Mauna Update"
 ALIASES['mauna-usb-formatter'] = "Mauna USB Formatter"
 ALIASES['shortwave'] = "Shortwave"
 ALIASES['system-monitoring-center'] = "System Monitoring Center"
-ALIASES['tuner'] = "Tuner"
 ALIASES['firefox'] = "Firefox"
 ALIASES['vlc'] = "VLC"
 ALIASES['mpv'] = "Mpv"
@@ -165,7 +164,7 @@ class HeadingMenuItem(Gtk.MenuItem):
         return Gdk.EVENT_STOP
 
 class FlatpakAddonRow(Gtk.ListBoxRow):
-    def __init__(self, app, parent_pkginfo, addon, name_size_group, button_size_group):
+    def __init__(self, app, parent_pkginfo, addon_pkginfo, name_size_group, button_size_group):
         Gtk.ListBoxRow.__init__(self)
         self.box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=4, margin_start=10, margin_end=10, margin_top=4, margin_bottom=4)
         self.add(self.box)
@@ -423,7 +422,7 @@ class PackageTile(Gtk.FlowBoxChild):
                 self.pkg_category = pkginfo.categories[1]
 
 
-        self.builder = Gtk.Builder.new_from_resource("/com/mauna/maunainstall/package-tile.glade")
+        self.builder = Gtk.Builder.new_from_resource("/top/mauna/maunainstall/package-tile.glade")
 
         self.overlay = self.builder.get_object("vertical_package_tile")
         self.button.add(self.overlay)
@@ -628,7 +627,7 @@ class Application(Gtk.Application):
     PAGE_PREFS = "prefs"
 
     def __init__(self):
-        super(Application, self).__init__(application_id='top.mauna.install',
+        super(Application, self).__init__(application_id='top.mauna.maunainstall',
                                           flags=Gio.ApplicationFlags.HANDLES_OPEN | Gio.ApplicationFlags.HANDLES_COMMAND_LINE)
 
         self.gui_ready = False
@@ -829,7 +828,7 @@ class Application(Gtk.Application):
         # Build the GUI
         glade_file = "/usr/share/mauna/maunainstall/maunainstall.glade"
 
-        self.builder = Gtk.Builder.new_from_resource("/com/mauna/maunainstall/maunainstall.glade")
+        self.builder = Gtk.Builder.new_from_resource("/top/mauna/maunainstall/maunainstall.glade")
 
         self.main_window = self.builder.get_object("main_window")
         self.main_window.set_title(_("Software Manager"))
@@ -2374,7 +2373,7 @@ class Application(Gtk.Application):
                 # may not actually contain the app's name. In this case their display
                 # names are better. The 'name' is still checked first above, because
                 # it's static - get_display_name() may involve a lookup with appstream.
-                                if flatpak and all(piece in pkginfo.get_display_name().upper() for piece in termsSplit):
+                if flatpak and all(piece in pkginfo.get_display_name().upper() for piece in termsSplit):
                     is_match = True
                     pkginfo.search_tier = 0
                     break
