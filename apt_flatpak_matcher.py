@@ -70,26 +70,22 @@ class Scraper():
                     continue
                 # if len(pkginfo.name.split(".")) > 3:
                     # continue
-                if pkginfo.name.endswith(".Locale"):
+                if pkginfo.name.endswith((".Locale", ".Debug", ".Sources", ".Codecs")):
                     continue
-                if pkginfo.name.endswith(".Debug"):
-                    continue
-                if pkginfo.name.endswith(".Sources"):
-                    continue
-                if pkginfo.name.endswith(".Codecs"):
-                    continue
-                if "Gtk3theme" in pkginfo.name:
-                    continue
-                if ".Addon." in pkginfo.name:
+                if (any(s in pkginfo.name for s in ("Gtk3theme", ".Addon.", "Platform"))):
                     continue
 
                 self.fp.append(pkginfo)
 
         matches = []
+        skip = True
+        for apt_pkginfo in self.apt:
+            if skip:
+                if apt_pkginfo.name != "moon-lander":
+                    continue
+                else:
+                    skip = False
 
-        with open("good", "w") as goodfile:
-            with open("bad", "w") as badfile:
-                for apt_pkginfo in self.apt:
                     for f in self.fp:
                         match = None
                         # print(apt_pkginfo.name.rsplit(":"))
@@ -106,6 +102,9 @@ class Scraper():
 
                         if hp_url_a == "github.com" and hp_url_f == "github.com":
                             continue
+
+                if f.get_summary() == "":
+                    continue
 
                         fname = f.name.partition(".")[2]
                         # if len(aname) == 0:
@@ -126,7 +125,7 @@ class Scraper():
 
                             print("\n\\\n%s\n%s\n\n%s\n%s\n\n%s\n%s\n/\n" % 
                                         (aname, f.name,
-                                         self.installer.get_summary(apt_pkginfo), self.installer.get_summary(f),
+                                 apt_pkginfo.get_summary(), f.get_summary(),
                                          hp_url_a, hp_url_f))
                             i = input("enter to accept, or n to skip: ")
                             if i == "n":
