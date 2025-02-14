@@ -1,3 +1,24 @@
+maunainstall (8.3.6) mauna; urgency=medium
+
+  * Load glade files using GResource
+  * Use Gio for checking network connectivity when an operation fails.
+  * Move screenshot and icon generators to a separate file.
+  * Remove dependency, references to AppStream
+  * Make debug environment variable the same as mauna-common
+  * Adapt to mauna-common installer changes
+  * Limit number of rsvg threads
+  * Remove maunainstall-remove-app
+  * search: Check keywords also
+  * Add software sources into submenu (Deactivate by Default)
+  * l10n: Update POT
+  * Simplify how flatpak addons are displayed
+  * Fix wrapping and alignment of Flatpak preference labels
+  * Update flatpak match info
+  * Fix Typo
+  * mintinstall.py: Fix package listing command.
+
+ -- Mauna Linux <dev@maunalinux.top>  Mon, 10 Feb 2025 22:17:14 -0300
+
 maunainstall (8.3.5) mauna; urgency=medium
 
   * New upstream release
