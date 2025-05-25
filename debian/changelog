@@ -1,3 +1,11 @@
+maunainstall (8.3.7) mauna; urgency=medium
+
+  * New upstream release
+  * Use auto resource management for license file
+  * Remove skypeforlinux from our featured/picks.
+
+ -- Mauna Linux <dev@maunalinux.top>  Wed, 07 May 2025 17:58:34 -0300
+
 maunainstall (8.3.6) mauna; urgency=medium
 
   * Load glade files using GResource
