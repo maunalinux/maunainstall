@@ -1,3 +1,11 @@
+maunainstall (8.3.8) mauna; urgency=medium
+
+  * New upstream release
+  * Unify scrollbar positioning
+  * Provide information about packaging types when a user views a Flatpak package, or one where both types are available.
+
+ -- Mauna Linux <dev@maunalinux.top>  Sat, 14 Jun 2025 23:39:14 -0300
+
 maunainstall (8.3.7) mauna; urgency=medium
 
   * New upstream release
