@@ -95,7 +95,7 @@
         <property name="position">1</property>
       </packing>
     </child>
-  </object>  
+  </object>
   <object class="GtkImage" id="image1">
     <property name="visible">True</property>
     <property name="can-focus">False</property>
@@ -231,7 +231,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">System packages are managed by your system and use shared libraries and resources.</property>
+            <property name="label" translatable="yes">System packages are managed by your Linux distribution and use shared libraries and resources.</property>
             <property name="wrap">True</property>
             <property name="width-chars">50</property>
             <property name="max-width-chars">50</property>
@@ -247,7 +247,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">They are stable but can become outdated over time, as they generally only receive bugfix and security updates.</property>
+            <property name="label" translatable="yes">They are safe, small and stable. They receive bug fixes and security updates but no newer versions.</property>
             <property name="wrap">True</property>
             <property name="width-chars">50</property>
             <property name="max-width-chars">50</property>
@@ -325,7 +325,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">Flatpaks are generally maintained by the application developers themselves, and usually provide the most up-to-date version.</property>
+            <property name="label" translatable="yes">Flatpaks are maintained and updated directly by their owner, with no control from your Linux distribution. They usually provide the most up to date version.</property>
             <property name="wrap">True</property>
             <property name="width-chars">50</property>
             <property name="max-width-chars">50</property>
@@ -341,7 +341,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">They are mostly self-contained, and rely on bundled dependencies (runtimes) instead of system packages. As a consequence, they tend to require significantly more disk space to install, though this is somewhat mitigated when multiple Flatpaks are using the same runtimes.</property>
+            <property name="label" translatable="yes">They take more disk space. Their security is not guaranteed by your Linux distribution, but by the Flatpak maintainer. It's essential you trust the maintainer before installing a Flatpak.</property>
             <property name="wrap">True</property>
             <property name="width-chars">50</property>
             <property name="max-width-chars">50</property>
@@ -429,7 +429,7 @@
                 <property name="can-focus">False</property>
                 <property name="valign">center</property>
                 <property name="orientation">vertical</property>
-                <property name="spacing">10</property>                
+                <property name="spacing">10</property>
                 <child>
                   <object class="GtkSpinner">
                     <property name="height-request">48</property>
@@ -452,7 +452,7 @@
                       <attribute name="weight" value="bold"/>
                       <attribute name="scale" value="1.2"/>
                     </attributes>
-                  </object>                  
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
@@ -885,7 +885,7 @@
                           <object class="GtkBox" id="box_application_name">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="margin-bottom">4</property>                            
+                            <property name="margin-bottom">4</property>
                             <child>
                               <object class="GtkLabel" id="application_name">
                                 <property name="visible">True</property>
@@ -914,7 +914,7 @@
                           <object class="GtkBox" id="box_application_summary">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="orientation">vertical</property>                            
+                            <property name="orientation">vertical</property>
                             <child>
                               <object class="GtkLabel" id="application_summary">
                                 <property name="visible">True</property>
@@ -991,7 +991,7 @@
                                     </attributes>
                                     <style>
                                       <class name="dim-label"/>
-                                    </style>                                    
+                                    </style>
                                   </object>
                                   <packing>
                                     <property name="expand">False</property>
@@ -1080,7 +1080,7 @@
                             <property name="can-focus">False</property>
                             <property name="no-show-all">True</property>
                             <property name="valign">center</property>
-                            <property name="orientation">vertical</property>                            
+                            <property name="orientation">vertical</property>
                             <property name="spacing">6</property>
                             <child>
                               <object class="GtkNotebook" id="notebook_progress">
@@ -1213,7 +1213,7 @@
                                     <property name="no-show-all">True</property>
                                     <property name="valign">center</property>
                                     <property name="label-xalign">0</property>
-                                    <property name="shadow-type">in</property>                                    
+                                    <property name="shadow-type">in</property>
                                     <child>
                                       <object class="GtkAlignment">
                                         <property name="visible">True</property>
@@ -1258,13 +1258,13 @@
                                     </child>
                                     <child type="label_item">
                                       <placeholder/>
-                                    </child>                                    
+                                    </child>
                                   </object>
                                   <packing>
                                     <property name="expand">False</property>
                                     <property name="fill">True</property>
                                     <property name="position">1</property>
-                                  </packing>                                  
+                                  </packing>
                                 </child>
                               </object>
                               <packing>
@@ -2255,7 +2255,7 @@
                 <property name="name">prefs</property>
                 <property name="position">6</property>
               </packing>
-            </child>            
+            </child>
           </object>
           <packing>
             <property name="expand">True</property>

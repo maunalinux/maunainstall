@@ -11,3 +11,4 @@ usr/share/mauna/maunainstall/*.glade~
 
 # cache files
 usr/lib/mauna/maunainstall/__pycache__
+resources/maunainstall.glade~
