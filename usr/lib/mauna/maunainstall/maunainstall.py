@@ -826,8 +826,6 @@ class Application(Gtk.Application):
             return
 
         # Build the GUI
-        glade_file = "/usr/share/mauna/maunainstall/maunainstall.glade"
-
         self.builder = Gtk.Builder.new_from_resource("/top/mauna/maunainstall/maunainstall.glade")
 
         self.main_window = self.builder.get_object("main_window")

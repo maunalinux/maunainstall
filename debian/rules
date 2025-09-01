@@ -10,7 +10,6 @@ override_dh_auto_install:
 	cd resources &&	glib-compile-resources \
 		--target=../debian/maunainstall/usr/share/mauna/maunainstall/maunainstall.gresource maunainstall.gresource.xml \
 		&& cd ..
-	cp resources/*.glade debian/maunainstall/usr/share/mauna/maunainstall
 	dh_auto_install
 
 # Inject version number in the code
