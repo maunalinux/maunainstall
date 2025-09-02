@@ -1,3 +1,14 @@
+maunainstall (8.3.9) mauna; urgency=medium
+
+  * New upstream release
+  * debian/rules: Don't install glade files.
+  * Update flatpak match info.
+  * Rework dot buttons
+  * Place banner buttons on the right side.
+  * l10n: Update POT
+
+ -- Mauna Linux <dev@maunalinux.top>  Mon, 01 Sep 2025 19:45:12 -0300
+
 maunainstall (8.3.8) mauna; urgency=medium
 
   * New upstream release
