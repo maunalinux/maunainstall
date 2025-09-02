@@ -12,6 +12,8 @@ Depends: python3 (>= 3.4),
          python3-bs4,
          python3-gi-cairo,
          python3-lxml,
+         python3-requests,
+         python3-requests-cache,
          python3-setproctitle,
          python3-xapp,
          gir1.2-gdkpixbuf-2.0,
@@ -23,5 +25,17 @@ Depends: python3 (>= 3.4),
          app-install-data,
          packagekit
 Recommends: gir1.2-flatpak-1.0, flatpak, xdg-desktop-portal-gtk
+Breaks: plasma-discover,
+        plasma-discover-common,
+        plasma-discover-backend-flatpak,
+        plasma-discover-backend-snap
+Conflicts: plasma-discover,
+           plasma-discover-common,
+           plasma-discover-backend-flatpak,
+           plasma-discover-backend-snap
+Replaces: plasma-discover,
+          plasma-discover-common,
+          plasma-discover-backend-flatpak,
+          plasma-discover-backend-snap
 Description: Software Manager
  A software manager to easily install new applications.
