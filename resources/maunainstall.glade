@@ -2120,7 +2120,23 @@
                                     <property name="can-focus">False</property>
                                     <property name="orientation">vertical</property>
                                     <child>
-                                      <object class="GtkFrame">
+                                      <object class="GtkSpinner" id="addons_spinner">
+                                        <property name="can-focus">False</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">start</property>
+                                        <property name="margin-top">24</property>
+                                        <property name="width-request">48</property>
+                                        <property name="height-request">48</property>
+                                        <property name="no-show-all">True</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">0</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkFrame" id="addons_content_frame">
                                         <property name="visible">True</property>
                                         <property name="can-focus">False</property>
                                         <property name="label-xalign">0</property>
