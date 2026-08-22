@@ -2305,6 +2305,10 @@ class Application(Gtk.Application):
             self.task_cancellable.cancel()
             self.task_cancellable = None
 
+        if self.search_idle_timer > 0:
+            GLib.source_remove(self.search_idle_timer)
+            self.search_idle_timer = 0
+
         # If we have a task, we're viewing a package and it's been 'loaded' fully.
         # Cancel it directly.
         elif self.current_task:
@@ -2495,7 +2499,7 @@ class Application(Gtk.Application):
                     is_match = True
                     pkginfo.search_tier = 100
                     break
-                if(search_in_description and termsUpper in self.installer.get_description(pkginfo).upper()):
+                if(search_in_description and termsUpper in self.installer.get_description(pkginfo, for_search=True).upper()):
                     is_match = True
                     pkginfo.search_tier = 200
                     break
