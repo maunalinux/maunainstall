@@ -1,3 +1,9 @@
+maunainstall (8.4.2) polaris; urgency=medium
+
+  * New upstream release 
+
+ -- Mauna Linux <dev@maunalinux.top>  Mon, 24 Aug 2026 14:14:38 -0300
+
 maunainstall (8.4.1) polaris; urgency=medium
 
   * New upstream release
